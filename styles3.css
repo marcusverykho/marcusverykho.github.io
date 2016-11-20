@@ -1,5 +1,5 @@
 /* reset style */ 
-article, aside, div, footer, header, h1, h2, h3, h4, h5, h6, p, nav, body, head, footer p, .background, .second::first-letter, .background2, .pannel1, .pannel2, .pannel3, .background, img {
+article, aside, div, footer, header, h1, h2, h3, h4, h5, h6, p, nav, body, head, footer p, .pannel1, .pannel2, .pannel3, img, section{
   margin: 0;
   padding: 0;
   border:0;
@@ -11,7 +11,6 @@ article, aside, div, footer, header, h1, h2, h3, h4, h5, h6, p, nav, body, head,
 
 
 /* nav border */
-
 nav {
     border-top: 3px solid #000000;
     border-bottom: 3px solid #000000;
@@ -22,7 +21,6 @@ nav {
     background-color: lightgray;
     z-index: 999;
 }
-
 nav a:link {
     text-decoration: none;
     font-size: 16px;
@@ -31,9 +29,7 @@ nav a:link {
 
 /* adjustment of nav icons */
 
-
 /* Home Icons */
-
 #Home1,
 #Home3 {
     top: 8.52em;
@@ -46,7 +42,6 @@ nav a:link {
     top: 0.2em;
     left: 22.6em;
 }
-
 #Home2 {
     top: 9.5em;
     left: 18.5em;
@@ -58,9 +53,7 @@ nav a:link {
     left: 23.2em;
 }
 
-
 /* Portfolio Icons */
-
 #Portfolio1,
 #Portfolio3 {
     width: 115px;
@@ -73,7 +66,6 @@ nav a:link {
     top: 0.2em;
     left: 30.3em;
 }
-
 #Portfolio2 {
     width: 102px;
     left: 26.97em;
@@ -84,9 +76,7 @@ nav a:link {
     left: 30.5em;
 }
 
-
 /* Achievement Icons */
-
 #Achievement1,
 #Achievement3 {
     width: 147px;
@@ -97,7 +87,6 @@ nav a:link {
     left: 39.4em;
     top: 0em;
 }
-
 #Achievement2 {
     width: 145px;
     top: 9.1em;
@@ -108,9 +97,7 @@ nav a:link {
     top: 0.2em;
 }
 
-
 /* About Icons */
-
 #About1 {
     width: 73px;
     top: 8.5em;
@@ -122,7 +109,6 @@ nav a:link {
     top: 0.3em;
     z-index: 1
 }
-
 #About2 {
     width: 85px;
     position: absolute;
@@ -132,7 +118,6 @@ nav a:link {
 }
 
 /* Contact Icons */
-
 #Contact1 {
     width: 133px;
     height: 98px;
@@ -143,7 +128,6 @@ nav a:link {
     left: 59em;
     top: 0.2em;
 }
-
 #Contact2 {
     width: 130px;
     height: 100px;
@@ -152,35 +136,29 @@ nav a:link {
     left: 59em;
     top: 0.2em;
 }
-
-.logo {
+#logo {
     margin-left: -75%;
     margin-top: -1%;
     transform: rotate(-10deg);
 }
 
-
 /* On Current Page */
-
 .Active {
     opacity: 1 !important;
 }
 
 
 /* Navigation bar hover effect */
-
 .icon:hover {
     opacity: 1 !important;
 }
 
 
 /*home background*/
-
 .home {
     padding-top: 7.2em;
     height: 710px;
 }
-
 #background {
     display: block;
     width: 100%;
@@ -190,14 +168,12 @@ nav a:link {
 
 
 /*Home Content*/
-
 .home h1 {
-    font-family: 'Satisfy', cursive, sans-serif;
+    font-family: 'Satisfy', cursive, sans-serif, Monospace;
     font-size: 100px;
     margin-top: -6.5em;
     margin-left: 4.2em;
 }
-
 #background2 {
     border: 1px solid #FFFFFF;
     width: 1100px;
@@ -214,71 +190,65 @@ nav a:link {
 
 .home h4 {
     text-decoration: underline;
-    font-family: 'Cookie', cursive, sans-serif;
+    font-family: 'Cookie', cursive, sans-serif, Monospace;
     font-size: 40px;
     opacity: 1 !important;
     margin-top: 1em;
     margin-left: 2em;
 }
-
 .home p {
-    font-family: 'Handlee', cursive, sans-serif;
+    font-family: 'Handlee', cursive, sans-serif, Monospace;
     font-size: 20px;
     opacity: 1 !important;
     line-height: 1.8em;
     margin-left: 4em;
     margin-top: 2em;
 }
-
 .home p:first-letter {
     font-size: 4em;
     line-height: 0.9em;
     float: left;
 }
 
-.me{
+.me {
     border: 2px solid transparent;
     border-radius: 50%;
-    width:200px;
-    height:200px;
-    margin-top:-13.6em;
-    margin-left:10em;
+    width: 200px;
+    height: 200px;
+    margin-top: -13.6em;
+    margin-left: 10em;
     transform: rotateY(180deg);
-    float:left;
+    float: left;
 }
-#me2{
-    margin-left:49em !important;
+#me2 {
+    margin-left: 49em !important;
     transform: rotateY(0deg) !important;
-    margin-top:-13.4em !important;
+    margin-top: -13.4em !important;
 }
+
 
 /*Achievement*/
 
-
 /*Achievement background */
-
 .achievement {
     background-color: #ADD8E6;
 }
 
 
 /*Text before horizontal lines */
-
 .label {
     color: #FFFFFF;
     font-size: 40px;
     text-shadow: 2px 2px 5px #E4259A;
-    font-family: 'Courgette', cursive, sans-serif;
+    font-family: 'Courgette', cursive, sans-serif, Monospace;
     text-align: center;
 }
-
 #cca {
     padding-top: 4em;
 }
 
 
 /* Horizontal Lines */
-
 .lines {
     border-top: 3px solid #800000;
     height: 300px;
@@ -287,7 +257,6 @@ nav a:link {
 
 
 /*Banner image */
-
 .Banner {
     width: 300px;
     margin-top: -1em;
@@ -295,12 +264,10 @@ nav a:link {
 
 
 /* Panel hover effects */
-
 .panel:hover > div.leftpanel {
-    transform: translateX(80%);
+    transform: translateX(60%);
     opacity: 0;
 }
-
 .panel:hover > div.rightpanel {
     transform: translateX(-105%);
     opacity: 0;
@@ -308,7 +275,6 @@ nav a:link {
 
 
 /* Entire unit adjustments */
-
 .panel {
     float: left;
     display: inline-block;
@@ -318,7 +284,6 @@ nav a:link {
 
 
 /* panel adjustment */
-
 .rightpanel {
     transform: translateX(0%);
     transition: 1s ease-out;
@@ -332,7 +297,6 @@ nav a:link {
     margin-top: -13.8em;
     opacity: 1;
 }
-
 .leftpanel {
     transform: translateX(0%);
     transition: 1s ease-out;
@@ -349,11 +313,9 @@ nav a:link {
 
 
 /*Panel text adjustments */
-
 .rightpanel h6 {
     margin-left: 2.6em;
 }
-
 .leftpanel h6 {
     margin-left: -0.1em;
 }
@@ -363,25 +325,22 @@ nav a:link {
     margin-top: 3.5em;
     color: #FF0000;
     font-size: 20px;
-    font-family: serif;
+    font-family: serif, sans-serif, Monospace;
 }
 
 
 /* Text inside banner adjustments */
-
 .award {
     text-align: center;
     margin-left: 0em;
     margin-top: -6em;
-    font-family: 'Alfa Slab One', cursive, sans-serif;
+    font-family: 'Alfa Slab One', cursive, sans-serif, Monospace;
     font-size: 20px;
 }
-
 #award4 {
     font-size: 30px;
     margin-top: -4em;
 }
-
 #award5 {
     font-size: 19px;
     margin-top: -7em;
@@ -390,14 +349,12 @@ nav a:link {
 
 
 /* clear left */
-
 .left {
     clear: left;
 }
 
 
 /*Portfolio background*/
-
 .backgroundd {
     width: 1263.65px;
     height: 265em;
@@ -407,7 +364,6 @@ nav a:link {
 
 
 /* First sentence */
-
 #smallercircle3 {
     border: 2px solid red;
     border-radius: 50%;
@@ -418,9 +374,8 @@ nav a:link {
     margin-top: 12em;
     margin-left: 33em;
 }
-
 .intro {
-    font-family: 'Courgette', cursive, sans-serif;
+    font-family: 'Courgette', cursive, sans-serif, Monospace;
     font-size: 30px;
     float: left;
     margin-top: -1.7em;
@@ -429,7 +384,6 @@ nav a:link {
 
 
 /* Vertical Line */
-
 .linee {
     border-left: 10px solid #000000;
     height: 227em;
@@ -437,7 +391,6 @@ nav a:link {
     margin-top: 10em;
     margin-left: 39em;
 }
-
 .circle {
     border: 2px solid #000000;
     border-radius: 50%;
@@ -447,11 +400,9 @@ nav a:link {
     margin-left: -1.65em;
     margin-top: 4.5em;
 }
-
 #first {
     margin-top: -4.5em;
 }
-
 .smallercircle {
     border: 2px solid springgreen;
     border-radius: 50%;
@@ -463,7 +414,6 @@ nav a:link {
 
 
 /* Red Circles */
-
 .red {
     border: 2px solid red;
     background-color: red;
@@ -471,7 +421,6 @@ nav a:link {
 
 
 /* left side figures */
-
 .triangle-left {
     width: 0;
     height: 0;
@@ -481,7 +430,6 @@ nav a:link {
     margin-left: -1em;
     margin-top: -2.5em;
 }
-
 .rectangle-left {
     border: 2px solid black;
     background-color: black;
@@ -495,7 +443,6 @@ nav a:link {
 
 
 /* right side figures */
-
 .triangle-right {
     width: 0;
     height: 0;
@@ -505,7 +452,6 @@ nav a:link {
     margin-left: 2.3em;
     margin-top: -2.5em;
 }
-
 .rectangle-right {
     border: 2px solid black;
     background-color: black;
@@ -519,30 +465,26 @@ nav a:link {
 
 
 /* Hover effects */
-
 .rectangle:hover {
     height: 14em;
     margin-top: -8.5em;
     opacity: 1;
 }
-
 .rectangle:hover>.special {
     opacity: 0;
     position: relative;
     z-index: -1;
 }
-
 .rectangle:hover > .text {
     opacity: 1 !important;
 }
 
 
 /* position of text */
-
 .rectangle-left h6,
 .rectangle-right h6 {
     color: white;
-    font-family: 'Handlee', cursive, sans-serif;
+    font-family: 'Handlee', cursive, sans-serif, Monospace;
     font-size: 25px;
     text-align: center;
     margin-top: 10%;
@@ -550,41 +492,34 @@ nav a:link {
 
 
 /*text with 2 lines */
-
 .longertext {
     margin-top: -1em;
 }
 
 
 /* Disappearing text */
-
 .special {
     transition: 1s ease-out;
 }
 
 
 /*Hover content*/
-
 .text {
     opacity: 0 !important;
     transition: 0.9s ease-out;
 }
-
 .text1 {
     margin-top: -3em !important;
     line-height: 3em !important;
 }
-
 .text2 {
     margin-top: -0.2em !important;
     font-size: 40px !important;
 }
-
 .text3 {
     font-size: 35px !important;
     margin-top: 0em !important;
 }
-
 #text10 {
     font-size: 30px;
     margin-top: 0.1em;
@@ -592,11 +527,9 @@ nav a:link {
 
 
 /* Footer Adjustments */
-
 footer {
     border-top: 3px solid #000000;
 }
-
 footer p {
     text-align: center;
     font-size: 25px;
@@ -604,9 +537,8 @@ footer p {
     display: inline-block;
     margin-left: 5em;
     color: #0000FF;
-    font-family: 'Lobster', cursive, sans-serif;
+    font-family: 'Lobster', cursive, sans-serif, Monospace;
 }
-
 footer a {
     margin: 2em;
 }
