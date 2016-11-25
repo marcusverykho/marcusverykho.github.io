@@ -263,11 +263,11 @@ nav a:link {
 
 
 /* Panel hover effects */
-.panel:hover > div.leftpanel {
+.panel:hover > div.rightpanel {
     transform: translateX(60%);
     opacity: 0;
 }
-.panel:hover > div.rightpanel {
+.panel:hover > div.leftpanel {
     transform: translateX(-105%);
     opacity: 0;
 }
@@ -283,12 +283,12 @@ nav a:link {
 
 
 /* panel adjustment */
-.rightpanel {
+.leftpanel {
     margin-left: .7em;
     margin-top: -12.8em;
     border-bottom-left-radius: 20px;
 }
-.leftpanel {
+.rightpanel {
     margin-left: 9.2em;
     margin-top: -11.2em;
     border-bottom-right-radius: 20px;
@@ -306,16 +306,16 @@ nav a:link {
 }
 
 /*Panel text adjustments */
-.rightpanel h6 {
+.leftpanel h6 {
     margin-left: 2.6em;
 }
-.leftpanel h6 {
+.rightpanel h6 {
     margin-left: -0.1em;
 }
 .rightpanel h6,
 .leftpanel h6 {
     margin-top: 3.5em;
-    color: #FF0000;
+    color: #D3D3D3;
     font-size: 20px;
     font-family: serif, sans-serif, Monospace;
 }
@@ -427,7 +427,7 @@ nav a:link {
     background-color: #000000;
     width: 30em;
     margin-left: -31.2em;
-    margin-top: -6.2em;
+    margin-top: -5.5em;
     height: 8em;
     transition: 0.6s ease-in;
     box-shadow: -10px 10px 5px #808080;
@@ -449,7 +449,7 @@ nav a:link {
     background-color: #000000;
     width: 30em;
     margin-left: 3.5em;
-    margin-top: -6.2em;
+    margin-top: -5.5em;
     height: 8em;
     transition: 0.6s ease-in;
     box-shadow: 10px 10px 5px #808080;
