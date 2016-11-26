@@ -4,7 +4,7 @@
 	   Date: 20 Nov 2016
 */
 /* reset style */ 
-article, aside, div, footer, header, h1, h2, h3, h4, h5, h6, p, nav, body, head, img, section, figure, a{
+article, aside, div, footer, header, h1, h2, h3, h4, h5, h6, p, nav, body, head, img, section, figure, a, #logo{
   margin: 0;
   padding: 0;
   border:0;
@@ -141,9 +141,9 @@ nav a:link {
     top: 0.2em;
 }
 #logo {
-    margin-left: -75%;
-    margin-top: 0%;
     transform: rotate(-10deg);
+    float:left;
+    margin-left:5em;
 }
 
 /* On Current Page effect */
