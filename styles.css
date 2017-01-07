@@ -10,7 +10,7 @@ article, aside, div, footer, header, h1, h2, h3, h4, h5, h6, p, nav, body, head,
   border:0;
 }
 .mainContainer {
-    max-width: 1200px;
+    max-width: 1280px;
     margin: 0 auto;
 }
 
@@ -20,7 +20,7 @@ nav {
     border-bottom: 3px solid #000000;
     height: 6.9em;
     text-align: center;
-    width: 1200px;
+    width: 1263px;
     position: fixed;
     background-color: #D3D3D3;
     z-index: 999;
@@ -186,7 +186,7 @@ nav a:link {
     height: 400px;
     opacity: 0.7;
     background-color: #FFFFFF;
-    margin-left: 3em;
+    margin-left: 5em;
     margin-top: 3.5em;
 }
 /*Paragraph*/
@@ -282,7 +282,7 @@ nav a:link {
     float: left;
     display: inline-block;
     margin-top: .5em;
-    margin-left: 5em;
+    margin-left: 5.5em;
 }
 
 
@@ -384,7 +384,7 @@ nav a:link {
     height: 227em;
     clear: left;
     margin-top: 14em;
-    margin-left: 37em;
+    margin-left: 40em;
 }
 .circle {
     border: 2px solid #000000;
