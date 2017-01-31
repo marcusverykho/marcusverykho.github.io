@@ -157,8 +157,7 @@ nav a:link {
     height:50px;
     float:left;
     display: block;
-    margin-top:5%;
-    margin-left:8%;
+    margin:8%;
 }
 
 /* On Current Page effect */
@@ -189,7 +188,7 @@ nav a:link {
 #home h1 {
     font-family: 'Satisfy', cursive, sans-serif, Monospace;
     font-size: 70px;
-    margin-left:35%;
+    margin-left:37%;
     margin-top:0%;
 }
 
@@ -197,7 +196,7 @@ nav a:link {
 #background2 {
     border: 1px solid #FFFFFF;
     width: 90%;
-    height: 60%;
+    height: 70%;
     opacity: 0.7;
     background-color: #FFFFFF;
     margin:9% auto 0 auto;
@@ -209,7 +208,7 @@ nav a:link {
     font-size: 40px;
     opacity: 1;
     margin-top: 2%;
-    margin-left: 2em;
+    margin-left: 5%;
 }
 #home p {
     font-family: 'Handlee', cursive, sans-serif, Monospace;
@@ -229,12 +228,12 @@ nav a:link {
 .me {
     border: 2px solid transparent;
     border-radius: 50%;
-    width: 17%;
-    height: 17%;
+    width: 130px;
+    height: 130px;
     transform: rotateY(180deg);
     float: left;
-    margin-top:-11%;
-    margin-left:10%;
+    margin-top:-23%;
+    margin-left:5%;
 }
 #me2 {
     margin-left: 80%;
