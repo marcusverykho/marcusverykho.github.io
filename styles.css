@@ -126,7 +126,7 @@ nav a:link {
     margin-left:4%;
 }
 
-/* Contact Icons */
+/* Contact Icons     */
 #Contact1, #Contact3 {
     width: 133px;
     height: 98px;
@@ -187,7 +187,7 @@ nav a:link {
 /*Welcome*/
 #home h1 {
     font-family: 'Satisfy', cursive, sans-serif, Monospace;
-    font-size: 70px;
+    font-size: 62px;
     margin-left:37%;
     margin-top:0%;
 }
