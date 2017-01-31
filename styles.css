@@ -627,6 +627,8 @@ footer a {
     .me {
         margin-top: -10.4em;
         margin-left: 4%;
+        width:200px;
+        height:200px;
     }
     /* Footer */
     footer a {
