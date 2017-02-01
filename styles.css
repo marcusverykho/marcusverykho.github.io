@@ -421,7 +421,7 @@ li{
     height: 370em;
     clear: left;
     margin-top: 14em;
-    margin-left: 37em;
+    margin-left: 30em;
 }
 .circle {
     border: 2px solid #000000;
@@ -465,8 +465,8 @@ li{
 .rectangle-left {
     border: 2px solid #000000;
     background-color: #000000;
-    width: 30em;
-    margin-left: -31.2em;
+    width: 25em;
+    margin-left: -26em;
     margin-top: -5.5em;
     height: 8em;
     transition: 0.6s ease-in;
@@ -487,8 +487,8 @@ li{
 .rectangle-right {
     border: 2px solid #000000;
     background-color: #000000;
-    width: 30em;
-    margin-left: -31em;
+    width: 25em;
+    margin-left: -26em;
     margin-top: -5.5em;
     height: 8em;
     transition: 0.6s ease-in;
@@ -681,17 +681,15 @@ footer a {
     margin-top: -2.5em;
     }
 .rectangle-right {
-    border: 2px solid #000000;
-    background-color: #000000;
     width: 30em;
     margin-left: 3.5em;
     margin-top: -5.5em;
-    height: 8em;
-    transition: 0.6s ease-in;
     box-shadow: 10px 10px 5px #808080;
     }
     .rectangle-left{
         margin-top: -5.5em;
+        width:30em;
+        margin-left: -31em;
     }
     /* Achievement */
     .panel{
