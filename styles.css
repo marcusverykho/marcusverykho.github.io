@@ -685,11 +685,13 @@ footer a {
     margin-left: 3.5em;
     margin-top: -5.5em;
     box-shadow: 10px 10px 5px #808080;
+    height: 8em;
     }
     .rectangle-left{
         margin-top: -5.5em;
         width:30em;
         margin-left: -31em;
+        height: 8em;
     }
     /* Achievement */
     .panel{
