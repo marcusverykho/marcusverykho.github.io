@@ -21,8 +21,20 @@
 <body>
     <div class="mainContainer">
         <header>
+            <!-- Hamburger menu -->
+                <figure>
+                    <span onclick="openNav()"><img src="Images/menu.png" alt="menu" class="menu"></span>
+                </figure>
+                <ul id="sidenav">
+                    <li><a href="javascript:void(0)" id="closebtn" onclick="closeNav()">&times;</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Achievement.html">Achievement</a></li>
+                    <li><a href="Portfolio.html">Portfoilio</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
             <!-- Navigation bar -->
-            <nav>
+            <nav id="nav" onclick="closeNav()">
                 <!-- Home -->
                 <figure>
                     <a href=index.html><img src="Images/Nav/Home1.PNG" class="icon" id="Home1" alt="home"></a>
@@ -55,25 +67,15 @@
                     <a href="Contact.html"><img src="Images/Nav/Contact1.PNG" class="icon" id="Contact1" alt="contact"></a>
                 </figure>
                 <figure><img src="Images/Nav/Contact2.PNG" id="Contact2" alt="contact"></figure>
-                <!-- Hamburger menu -->
-                <figure>
-                    <img src="Images/menu.png" alt="menu" class="menu">
-                </figure>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="Achievement.html">Achievement</a></li>
-                    <li><a href="Portfolio.html">Portfoilio</a></li>
-                    <li><a href="About.html">About</a></li>
-                    <li><a href="Contact.html">Contact</a></li>
-                </ul>
                 <!-- Logo -->
                 <figure>
                     <img src="Images/Nav/logo2.png" alt="logo" id="logo">
                 </figure>
             </nav>
+            
         </header>
         <!--Content -->
-        <section id="home">
+        <section class="home" id="test" onclick="closeNav()">
             <figure><img id="background" src="Images/Home/background.jpg" alt="wallpaper"> </figure>
             <h1> Welcome! </h1>
             <figure> <img src="Images/Home/Me.JPG" class="me" alt="mypicture"> <img src="Images/Home/Me.JPG" class="me" id="me2" alt="mypicture"></figure>

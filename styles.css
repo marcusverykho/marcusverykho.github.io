@@ -22,7 +22,11 @@ nav {
     width: 100%;
     position: relative;
     background-color: #D3D3D3;
-    z-index: 999;
+    z-index: 998;
+}
+#nav{
+    transition: margin-left .5s;
+    margin-left:0;
 }
 nav a:link {
     text-decoration: none;
@@ -161,19 +165,38 @@ nav a:link {
     display: block;
     position: absolute;
     top:2em;
-    left:3em;
+    left:4em;
+    z-index:999;
 }
 
 ul {
     list-style: none;
     border:3px solid black;
-    width:5em;
-    height:9em;
-    margin-top:80px;
-    text-align: center;
-    display: none;
-    margin-left:10px;
     background-color: black;
+    text-align: center;
+    height:100%;
+    width:0;
+    position:fixed;
+    top:-17px;
+    left:0;
+    transition: ease-in 0.5s;
+    z-index:999;
+    padding-top:50px;   
+    display: none;
+    font-family:cursive;
+}
+#closebtn{
+    position: absolute;
+    top:0;
+    left:120px;
+    font-size: 36px;
+}
+ul a{
+    text-decoration: none;
+}
+
+ul a:hover{
+    color:green;
 }
 
 li{
@@ -194,11 +217,12 @@ li{
 
 
 /* Home background*/
-#home {
+.home {
     height: 720px;
     background-color: aquamarine;
     width:100%;
     position: absolute;
+    transition:margin-left 0.5s;
 }
 #background{
     display: none;
@@ -207,7 +231,7 @@ li{
 
 /*Home Content*/
 /*Welcome*/
-#home h1 {
+.home h1 {
     font-family: 'Satisfy', cursive, sans-serif, Monospace;
     font-size: 62px;
     margin-left:37%;
@@ -222,9 +246,10 @@ li{
     opacity: 0.7;
     background-color: #FFFFFF;
     margin:2% auto 0 auto;
+    padding-left:26px;
 }
 /*Paragraph*/
-#home h4 {
+.home h4 {
     text-decoration: underline;
     font-family: 'Cookie', cursive, sans-serif, Monospace;
     font-size: 40px;
@@ -232,7 +257,7 @@ li{
     margin-top: 2%;
     margin-left: 5%;
 }
-#home p {
+.home p {
     font-family: 'Handlee', cursive, sans-serif, Monospace;
     font-size: 16px;
     opacity: 1;
@@ -240,7 +265,7 @@ li{
     margin-left:2%;
     margin-top: 2%;
 }
-#home p:first-letter {
+.home p:first-letter {
     font-size: 4em;
     line-height: 0.9em;
     float: left;
@@ -258,9 +283,9 @@ li{
     margin-left:5%;
 }
 #me2 {
-    margin-left: 80%;
+    margin-left: 75%;
     transform: rotateY(0deg);
-    margin-top: -16%;
+    margin-top: -12.6em;
     display:none;
 }
 
@@ -268,7 +293,7 @@ li{
 /*Achievement*/
 
 /*Achievement background */
-#achievement {
+.achievement {
     background-color: #ADD8E6;
     margin-bottom: -45em;
     width:100%;
@@ -386,12 +411,13 @@ li{
 
 
 /*Portfolio background*/
-#backgroundd {
+.backgroundd {
     height: 400em;
     background-color: #B0E0E6;
     z-index: -999;
     margin-bottom:-45em;
     width:100%;
+    transition:margin-left .5s;
 }
 
 
@@ -540,8 +566,9 @@ li{
     transition: 0.9s ease-out;
 }
 .text1 {
-    margin-top: -3em !important;
+    margin-top: -1.4em !important;
     line-height: 3em !important;
+    font-size:20px !important;
 }
 .text2 {
     margin-top: -0.2em !important;
@@ -594,7 +621,7 @@ footer a {
 }
 
 @media screen and (min-width: 1000px) {
-    #home p{
+    .home p{
         font-size:22px;
     }
 }
@@ -624,18 +651,22 @@ footer a {
     #logo{
     left:6%;
 }
-    
+    nav{
+        padding-left:0px;
+    }
     /*Home page*/
-    #home{
+    .home{
         height: 720px;
         width:100%;
+        transition: margin-left .5s;
+        padding-left:0px;
     }
     #background {
         display: block;
         width: 100%;
         height: 720px;
     }
-    #home h1{
+    .home h1{
         font-size: 100px;
         margin-top: -650px;
     }
@@ -658,35 +689,40 @@ footer a {
     }
     
     /*Portfolio*/
-    #backgroundd{
+    /*height and width of background*/
+    .backgroundd{
         height:260em;
         width:1263px;
+        padding-left:0;
     }
+    /* Position, height and width of line*/
     #linee{
     margin-top: 14em;
     margin-left: 40em;
     height: 227em;
-        border-left: 10px solid #000000;
+    border-left: 10px solid #000000;
     }
+    /*Position, size of Circles */
     .circle {
         margin-top:4.4em;
         height: 2.5em;
         width: 2.5em;
         margin-left:-1.65em;
     }
+    /*Size of smaller circle*/
     .smallercircle{
         height: 1.5em;
         width: 1.5em;
     }
+    /*Change pointing direction of triangle and position*/
     .triangle-right {
-    width: 0;
-    height: 0;
     border-right: 20px solid #000000;
     border-left:0;
     margin-left: 2.3em;
     margin-top: -2.5em;
     }
-.rectangle-right {
+    /*Width, position, shadow and height of rectangle*/
+    .rectangle-right {
     width: 30em;
     margin-left: 3.5em;
     margin-top: -5.5em;
@@ -699,9 +735,14 @@ footer a {
         margin-left: -31em;
         height: 8em;
     }
+    /* Font size */
     .rectangle-left h6,
     .rectangle-right h6{
         font-size: 25px;
+    }
+    /* Position of text*/
+    .text1{
+        margin-top: -3em !important;
     }
     /* Achievement */
     .panel{
