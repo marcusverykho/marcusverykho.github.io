@@ -15,3 +15,40 @@ function closeNav() {
     document.getElementById("test").style.marginLeft = "0";
 
 }
+
+/* Transition for text in achievement */
+var test = document.getElementsByClassName("clickable");
+var award = document.getElementsByClassName("award");
+var j, m;
+
+for (j = 0; j < test.length; j++) {
+  test[j].onclick = function() {
+    this.classList.toggle("active");
+    var info = this.nextElementSibling;
+    if (info.style.maxHeight){  
+  	  info.style.maxHeight = null;
+    } else {
+  	  info.style.maxHeight = info.scrollHeight + "px";
+    }
+    var award = this.previousElementSibling;
+    award.classList.toggle("active2");
+}
+}
+
+
+/* Mobile achievement */
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].onclick = function() {
+    this.classList.toggle("active");
+    var panels = this.nextElementSibling;
+    if (panels.style.maxHeight){
+  	  panels.style.maxHeight = null;
+    } else {
+  	  panels.style.maxHeight = panels.scrollHeight + "px";
+    } 
+  }
+}
+

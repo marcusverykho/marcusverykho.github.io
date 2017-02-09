@@ -9,6 +9,30 @@ article, aside, div, footer, header, h1, h2, h3, h4, h5, h6, p, nav, body, head,
   padding: 0;
   border:0;
 }
+@font-face{
+    font-family:"Exo"; src: url("Exo-LightItalic.otf");
+}
+@font-face{
+    font-family:"GrandHotel"; src: url("GrandHotel-Regular.otf");
+}
+@font-face{
+    font-family:"SeaSide"; src:url("SEASRN__.ttf");
+}
+@font-face{
+    font-family:"3Dumb"; src:url("FFF.ttf");
+}
+@font-face{
+    font-family:"LeagueGothic"; src:url("LeagueGothic.otf")
+}
+@font-face{
+    font-family:"ArchitectsDaughter"; src:url("ArchitectsDaughter.ttf")
+}
+@font-face{
+    
+}
+@font-face{
+    
+}
 .mainContainer {
     max-width: 1280px;
     margin: 0 auto;
@@ -159,6 +183,7 @@ nav a:link {
     left:40%;
 }
 
+/* Hamburger Menu */
 .menu {
     height:50px;
     float:left;
@@ -168,8 +193,7 @@ nav a:link {
     left:4em;
     z-index:999;
 }
-
-ul {
+header ul {
     list-style: none;
     border:3px solid black;
     background-color: black;
@@ -194,11 +218,9 @@ ul {
 ul a{
     text-decoration: none;
 }
-
 ul a:hover{
     color:green;
 }
-
 li{
     margin-left:-50%;
     margin-bottom: 15%;
@@ -209,7 +231,6 @@ li{
     opacity: 1 !important;
 }
 
-
 /* Navigation bar hover effect */
 .icon:hover {
     opacity: 1 !important;
@@ -219,10 +240,11 @@ li{
 /* Home background*/
 .home {
     height: 720px;
-    background-color: aquamarine;
+    background-color: skyblue;
     width:100%;
     position: absolute;
     transition:margin-left 0.5s;
+    max-width:1280px;
 }
 #background{
     display: none;
@@ -232,9 +254,9 @@ li{
 /*Home Content*/
 /*Welcome*/
 .home h1 {
-    font-family: 'Satisfy', cursive, sans-serif, Monospace;
-    font-size: 62px;
-    margin-left:37%;
+    font-family: 'SeaSide', sans-serif, Monospace;
+    font-size: 40px;
+    margin-left:40%;
     margin-top:10%;
 }
 
@@ -251,14 +273,14 @@ li{
 /*Paragraph*/
 .home h4 {
     text-decoration: underline;
-    font-family: 'Cookie', cursive, sans-serif, Monospace;
+    font-family: 'GrandHotel', cursive, sans-serif, Monospace;
     font-size: 40px;
     opacity: 1;
     margin-top: 2%;
     margin-left: 5%;
 }
 .home p {
-    font-family: 'Handlee', cursive, sans-serif, Monospace;
+    font-family: 'Exo', sans-serif, Monospace;
     font-size: 16px;
     opacity: 1;
     line-height: 1.8em;
@@ -295,23 +317,21 @@ li{
 /*Achievement background */
 .achievement {
     background-color: #ADD8E6;
-    margin-bottom: -45em;
     width:100%;
+    display: none;
 }
-
 
 /*Text before horizontal lines */
 .label {
     color: #FFFFFF;
     font-size: 40px;
     text-shadow: 2px 2px 5px #E4259A;
-    font-family: 'Courgette', cursive, sans-serif, Monospace;
+    font-family: '3Dumb', sans-serif, Monospace;
     text-align: center;
 }
 #cca {
-    padding-top: 4em;
+    padding-top: 1em;
 }
-
 
 /* Horizontal Lines */
 .lines {
@@ -323,9 +343,8 @@ li{
 /* Entire unit adjustments */
 .panel {
     float: left;
-    display: inline-block;
-    margin-top: 2em;
-    margin-left:5%;
+    margin-top: .5em;
+    margin-left: 5.5em;
 }
 
 /*Banner image */
@@ -333,7 +352,6 @@ li{
     width: 300px;
     margin-top: -1em;
 }
-
 
 /* Panel hover effects */
 .panel:hover > div.rightpanel{
@@ -344,7 +362,6 @@ li{
     transform: translateX(-105%);
     opacity: 0;
 }
-
 
 /* panel adjustment */
 .leftpanel {
@@ -363,10 +380,10 @@ li{
     border: 2px solid #000000;
     background-color: #000000;
     height: 175px;
-    z-index: 99;
     width: 134px;
     opacity: 1;
-
+    position:relative;
+    z-index:999;
 }
 
 /*Panel text adjustments */
@@ -384,29 +401,125 @@ li{
     font-family: serif, sans-serif, Monospace;
 }
 
-
 /* Text inside banner adjustments */
 .award {
     text-align: center;
     margin-left: 0em;
-    margin-top: -6em;
-    font-family: 'Alfa Slab One', cursive, sans-serif, Monospace;
-    font-size: 20px;
+    margin-top: -170px;
+    font-family: 'LeagueGothic', cursive, sans-serif, Monospace;
+    font-size: 35px;
+    position: relative;
+    z-index:2;
+    display: block;
+    opacity: 1;
+}
+.award.active2{
+    opacity:0;
 }
 #award4 {
-    font-size: 30px;
-    margin-top: -4em;
+    font-size: 70px;
+    margin-top: -140px;
 }
 #award5 {
-    font-size: 19px;
-    margin-top: -7em;
+    font-size: 30px;
+    margin-top: -5em;
     margin-left: -0.3em;
 }
+.award2 {
+    margin-top:-4em;
+}
 
-
+/* More information */
+button.clickable{
+    background-color: white;
+    color: #444;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-size: 11px;
+    margin-left:1.5em;
+    margin-top:0.5em;
+}
+button.clickable:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 11px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+button.clickable.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+button.clickable.active, button.clickable:hover {
+    background-color: #ddd;
+}
+/*Text for more information*/
+.info {
+    margin-top:-7em;
+    margin-left:.8em;
+    width:16.4em;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    text-align: center;
+    border:2px solid black;
+    background-color: black;
+}
 /* clear left */
 .left {
     clear: left;
+}
+
+/* Mobile version */
+#mobile {
+    background-color: lightsteelblue;
+    display: block;
+    padding-top:1em;
+    height:90em;
+    margin-bottom: -45em;
+}
+.accordion {
+    background-color:lightgrey;
+    color: #444;
+    padding: 18px 20px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    margin-top:2em;
+}
+button.accordion{
+    background-color: #eee;
+    margin-top:0em;
+    padding:18px 35px;
+    cursor: pointer;
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color: #ddd;
+}
+
+.sub {
+    padding: 0px 50px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color:darkgrey;
+}
+button.accordion:after{
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+button.accordion.active:after{
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
 
 
@@ -420,7 +533,6 @@ li{
     transition:margin-left .5s;
 }
 
-
 /* First sentence */
 #smallercircle3 {
     border: 2px solid red;
@@ -429,7 +541,7 @@ li{
     width: 1.5em;
     background-color: #FF0000;
     float: left;
-    margin-top: 11em;
+    margin-top: 2em;
     margin-left: 21em;
 }
 .intro {
@@ -438,7 +550,6 @@ li{
     float: left;
     margin-top: -1.1em;
 }
-
 
 /* Vertical Line */
 #linee {
@@ -469,13 +580,11 @@ li{
     margin: 0.36em auto;
 }
 
-
 /* Red Circles */
 .red {
     border: 2px solid #FF0000;
     background-color: #FF0000;
 }
-
 
 /* left side figures */
 .triangle-left {
@@ -498,7 +607,6 @@ li{
     box-shadow: -10px 10px 5px #808080;
 }
 
-
 /* right side figures */
 .triangle-right {
     width: 0;
@@ -520,7 +628,6 @@ li{
     box-shadow: -10px 10px 5px #808080;
 }
 
-
 /* Hover effects */
 .rectangle:hover {
     height: 14em;
@@ -536,7 +643,6 @@ li{
     opacity: 1 !important;
 }
 
-
 /* position of text */
 .rectangle-left h6,
 .rectangle-right h6 {
@@ -547,18 +653,15 @@ li{
     margin-top: 10%;
 }
 
-
 /*text with 2 lines */
 .longertext {
     margin-top: -1em;
 }
 
-
 /* Disappearing text */
 .special {
     transition: 1s ease-out;
 }
-
 
 /*Hover content*/
 .text {
@@ -583,8 +686,30 @@ li{
     margin-top: 0.1em;
 }
 
+
 /* Contact */
 #Contact{
+    height:40em;
+    background-color:beige;
+    padding-top:1%;
+}
+#Contact form{
+    margin-left:1%;
+    width:60%;
+}
+
+#contactinfo label{
+    margin:.5em;
+    line-height: 2em;
+}
+#emailinput {
+    margin-left:0em;
+}
+#purpose input {
+    margin:.7em;
+}
+/* About */
+#About{
     height:31em;
 }
 
@@ -593,11 +718,6 @@ li{
     margin-top:20%;
     margin-left: 35%;
     font-size: 40px;
-}
-
-/* About */
-#About{
-    height:31em;
 }
 
 /* Footer Adjustments */
@@ -620,10 +740,19 @@ footer a {
     margin: 7%;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1174px) {
     .home p{
         font-size:22px;
     }
+    /* Achievement */
+    .achievement{
+        display: block;
+        margin-bottom: -45em;
+    }
+    #mobile{
+        display: none;
+    }
+   
 }
 @media screen and (min-width: 810px) {
     /* Nav Icons appear */
@@ -656,10 +785,7 @@ footer a {
     }
     /*Home page*/
     .home{
-        height: 720px;
-        width:100%;
-        transition: margin-left .5s;
-        padding-left:0px;
+        margin: 0 auto;
     }
     #background {
         display: block;
@@ -667,13 +793,13 @@ footer a {
         height: 720px;
     }
     .home h1{
-        font-size: 100px;
+        font-size: 60px;
         margin-top: -650px;
+        margin-left:30%;
     }
     #background2 {
     width: 93%;
     height:50%;
-    margin:4% auto;
     }
     #me2{
         display:block;
@@ -692,8 +818,13 @@ footer a {
     /*height and width of background*/
     .backgroundd{
         height:260em;
-        width:1263px;
         padding-left:0;
+    }
+    #smallercircle3 {
+        margin-left: 30.5em;
+    }
+    .intro{
+        margin-left:5em;
     }
     /* Position, height and width of line*/
     #linee{
@@ -744,10 +875,12 @@ footer a {
     .text1{
         margin-top: -3em !important;
     }
-    /* Achievement */
-    .panel{
-    margin-top: .5em;
-    margin-left: 5.5em;
+    /*Contact */
+     #emailinput{
+        margin-left:2.4em;
+    }
+    #purpose input{
+        font-size:10px;
     }
     /* Footer */
     footer a {

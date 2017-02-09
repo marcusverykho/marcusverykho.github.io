@@ -21,8 +21,20 @@
 <body>
     <div class="mainContainer">
         <header>
+            <!-- Hamburger menu -->
+                <figure>
+                    <span onclick="openNav()"><img src="Images/menu.png" alt="menu" class="menu"></span>
+                </figure>
+                <ul id="sidenav">
+                    <li><a href="javascript:void(0)" id="closebtn" onclick="closeNav()">&times;</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Achievement.html">Achievement</a></li>
+                    <li><a href="Portfolio.html">Portfoilio</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
             <!-- Navigation bar -->
-            <nav>
+            <nav id="nav">
                 <!-- Home -->
                 <figure>
                     <a href=index.html><img src="Images/Nav/Home1.PNG" class="icon" id="Home1" alt="home"></a>
@@ -58,7 +70,37 @@
             </nav>
         </header>
         <section id="Contact">
-            <h2 class="notFinished">Work still in progress..</h2>
+             <form>
+                <fieldset id=contactinfo>
+                    <legend>Contact information</legend>
+                    <label>First Name
+                    <input type="text" name="name" id="firstnameinput" placeholder="First name" style="width: 300px;" required>
+                    </label>
+                    <label><br />Last Name
+                    <input type="text" name="name" id="lastnameinput" placeholder="Last name" style="width: 300px;"required>
+                    </label>
+                    <label><br />Email
+                    <input type="email" name="email" id="emailinput" style="width: 300px;" placeholder="address@example.com"required>
+                    </label>
+                </fieldset>
+                <fieldset id="purpose">
+                    <legend>Contact Purpose</legend>
+                    <input type="checkbox" name="purpose" id="improve" value="WebsiteImprovement"> Improvement on my website<br />
+                    <input type="checkbox" name="purpose" id="personalquestion" value="personalquestion"> Ask me a personal question <br />
+                    <input type="checkbox" name="purpose" id="science" value="ScienceFriction/Fantasy"> Ask me a work related question<br />
+                    <input type="checkbox" name="purpose" id="feedback" value="feedback"> Giving any feedback<br />
+                </fieldset>
+                <fieldset id="additionalinfo">
+                 <legend>Tell me below!</legend>
+                     <label for="feedback">
+                        Feedbacks/Questions:
+                        <textarea name="feedback" id="feedback" rows="6" cols="60"></textarea>
+                     </label>
+                 </fieldset>
+                <fieldset class="submitbutton">
+                    <input type="submit" id="submit" value="Submit">
+                </fieldset>
+                </form>
         </section>
         <footer>
             <p> &copy; Copyright 2016 Marcus Kho. Content thieves will be beaten.</p>
