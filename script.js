@@ -52,3 +52,11 @@ for (i = 0; i < acc.length; i++) {
   }
 }
 
+$(document).scroll(function() {
+  var y = $(this).scrollTop();
+  if (y > 800) {
+    $('.back-to-top').fadeIn();
+  } else {
+    $('.back-to-top').fadeOut();
+  }
+}); 

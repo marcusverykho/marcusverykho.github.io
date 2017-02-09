@@ -33,6 +33,7 @@ article, aside, div, footer, header, h1, h2, h3, h4, h5, h6, p, nav, body, head,
 @font-face{
     
 }
+
 .mainContainer {
     max-width: 1280px;
     margin: 0 auto;
@@ -175,6 +176,8 @@ nav a:link {
     top: 2%;
     Display:none;
 }
+
+/* Logo */
 #logo {
     transform: rotate(-10deg);
     float:left;
@@ -454,6 +457,7 @@ button.clickable.active:after {
 button.clickable.active, button.clickable:hover {
     background-color: #ddd;
 }
+
 /*Text for more information*/
 .info {
     margin-top:-7em;
@@ -466,6 +470,7 @@ button.clickable.active, button.clickable:hover {
     border:2px solid black;
     background-color: black;
 }
+
 /* clear left */
 .left {
     clear: left;
@@ -517,7 +522,6 @@ button.accordion:after{
     float: right;
     margin-left: 5px;
 }
-
 button.accordion.active:after{
     content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
@@ -532,6 +536,28 @@ button.accordion.active:after{
     width:100%;
     transition:margin-left .5s;
 }
+.backgroundd h1{
+    text-align: center;
+    font-size:56px;
+    font-family:'3dumb';
+    padding-top:1em;
+}
+
+/* Back to top */
+.back-to-top img {
+    position: fixed;
+    z-index: 998;
+    top:16em;
+    height:40px;
+    right:1.5em;
+    top:33em;
+}
+
+.back-to-top p{
+    position:fixed;
+    right:.5em;
+    top:35em;
+}
 
 /* First sentence */
 #smallercircle3 {
@@ -541,7 +567,7 @@ button.accordion.active:after{
     width: 1.5em;
     background-color: #FF0000;
     float: left;
-    margin-top: 2em;
+    margin-top: 4em;
     margin-left: 21em;
 }
 .intro {
@@ -741,9 +767,11 @@ footer a {
 }
 
 @media screen and (min-width: 1174px) {
+    /* Home text size */
     .home p{
         font-size:22px;
     }
+    
     /* Achievement */
     .achievement{
         display: block;
@@ -783,6 +811,7 @@ footer a {
     nav{
         padding-left:0px;
     }
+    
     /*Home page*/
     .home{
         margin: 0 auto;
@@ -826,6 +855,7 @@ footer a {
     .intro{
         margin-left:5em;
     }
+    
     /* Position, height and width of line*/
     #linee{
     margin-top: 14em;
@@ -833,6 +863,7 @@ footer a {
     height: 227em;
     border-left: 10px solid #000000;
     }
+    
     /*Position, size of Circles */
     .circle {
         margin-top:4.4em;
@@ -840,11 +871,13 @@ footer a {
         width: 2.5em;
         margin-left:-1.65em;
     }
+    
     /*Size of smaller circle*/
     .smallercircle{
         height: 1.5em;
         width: 1.5em;
     }
+    
     /*Change pointing direction of triangle and position*/
     .triangle-right {
     border-right: 20px solid #000000;
@@ -852,6 +885,7 @@ footer a {
     margin-left: 2.3em;
     margin-top: -2.5em;
     }
+    
     /*Width, position, shadow and height of rectangle*/
     .rectangle-right {
     width: 30em;
@@ -866,15 +900,18 @@ footer a {
         margin-left: -31em;
         height: 8em;
     }
+    
     /* Font size */
     .rectangle-left h6,
     .rectangle-right h6{
         font-size: 25px;
     }
+    
     /* Position of text*/
     .text1{
         margin-top: -3em !important;
     }
+    
     /*Contact */
      #emailinput{
         margin-left:2.4em;
@@ -882,6 +919,7 @@ footer a {
     #purpose input{
         font-size:10px;
     }
+    
     /* Footer */
     footer a {
         margin: 3%;
