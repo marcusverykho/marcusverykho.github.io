@@ -60,3 +60,12 @@ $(document).scroll(function() {
     $('.back-to-top').fadeOut();
   }
 }); 
+
+$(document).scroll(function() {
+  var y = $(this).scrollTop();
+  if (y > 700) {
+    $('.backtotop').fadeOut();
+  } else {
+    $('.backtotop').fadeIn();
+  }
+});
