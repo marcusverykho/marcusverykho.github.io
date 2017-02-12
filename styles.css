@@ -191,8 +191,8 @@ nav a:link {
 }
 header ul {
     list-style: none;
-    border:3px solid lightsteelblue;
-    background-color: lightsteelblue;
+    border:3px solid #B0C4DE;
+    background-color: #B0C4DE;
     text-align: center;
     height:100%;
     width:0;
@@ -203,7 +203,6 @@ header ul {
     z-index:999;
     padding-top:50px;   
     display: none;
-    font-family:cursive;
 }
 #closebtn{
     position: absolute;
@@ -213,10 +212,11 @@ header ul {
 }
 ul a{
     text-decoration: none;
-    color:white
+    color:#FFFFFF;
+    font-family:"exo", serif, sans-serif;
 }
 ul a:hover{
-    color:black;
+    color:#000000;
 }
 li{
     margin-left:-50%;
@@ -237,7 +237,7 @@ li{
 /* Home background*/
 .home {
     height: 720px;
-    background-color: skyblue;
+    background-color: #87CEEB;
     width:100%;
     position: absolute;
     transition:margin-left 0.5s;
@@ -437,7 +437,7 @@ li{
 
 /* More information */
 button.clickable{
-    background-color: white;
+    background-color: #FFFFFF;
     color: #444;
     cursor: pointer;
     border: none;
@@ -470,8 +470,8 @@ button.clickable.active, button.clickable:hover {
     overflow: hidden;
     transition: max-height 0.2s ease-out;
     text-align: center;
-    border:2px solid black;
-    background-color: black;
+    border:2px solid #000000;
+    background-color: #000000;
 }
 #long{
     margin-top:-8.2em;
@@ -486,7 +486,7 @@ button.clickable.active, button.clickable:hover {
 
 /*Background */
 .mobile {
-    background-color: lightsteelblue;
+    background-color: #B0C4DE;
     display: block;
     padding-top:1em;
     height:90em;
@@ -494,9 +494,10 @@ button.clickable.active, button.clickable:hover {
     transition:margin-left 0.5s;
     max-width:1280px;
 }
+
 /*Main labels*/
 .accordion {
-    background-color:lightgrey;
+    background-color:#D3D3D3;
     color: #444;
     padding: 18px 20px;
     width: 100%;
@@ -507,6 +508,7 @@ button.clickable.active, button.clickable:hover {
     transition: 0.4s;
     margin-top:2em;
 }
+
 /*Award name*/
 button.accordion{
     background-color: #eee;
@@ -527,14 +529,15 @@ button.accordion:after{
 button.accordion.active:after{
     content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
+
 /*Award information*/
 .sub {
     padding: 0px 50px;
-    background-color: white;
+    background-color: #FFFFFF;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
-    background-color:darkgrey;
+    background-color:#A9A9A9;
     
 }
 
@@ -551,7 +554,7 @@ button.accordion.active:after{
 .backgroundd h1{
     text-align: center;
     font-size:56px;
-    font-family:'3dumb';
+    font-family:'3dumb', sans-serif, monospace;
     padding-top:1em;
 }
 
@@ -563,13 +566,13 @@ button.accordion.active:after{
     right:-0.1em;
     top:28em;
     cursor:pointer;
-    color:white;
+    color:#FFFFFF;
 }
 .back-to-top p{
     position:fixed;
     right:.1em;
     top:30.2em;
-    color:black;
+    color:#000000;
 }
 
 /* First sentence */
@@ -719,13 +722,13 @@ button.accordion.active:after{
 /* Contact */
 .Contact{
     height:50em;
-    background-color:beige;
+    background-color:#F5F5DC;
     padding-top:1%;
     margin-bottom: -45em;
     transition:margin-left .5s;
 }
 .Contact h1{
-    font-family: "3dumb";
+    font-family: "3dumb", sans-serif, monospace;
     text-align:center;
     font-size:50px;
     margin-bottom: 1em;
@@ -755,8 +758,9 @@ button.accordion.active:after{
     text-align: center;
 }
 
+/*RESULTS*/
 .contentstart{
-    background-color: beige;
+    background-color: #F5F5DC;
     height:50em;
     margin-bottom: -45em;
 }
@@ -765,11 +769,10 @@ button.accordion.active:after{
     padding-left: 20%;
 }
 .results{
-    margin-top:1em;
-    margin-left:18%;
+    margin: 1em auto;
     font-size:20px;
-    border:3px solid white;
-    background-color: white;
+    border:3px solid #FFFFFF;
+    background-color: #FFFFFF;
     box-shadow: 5px 5px 5px 5px #808080;
     width:57%;
     height:20%;
@@ -992,7 +995,7 @@ footer a {
     }
     #text10{
         font-size: 30px !important;
-        margin-top: 0.1em !imporptant; 
+        margin-top: 0.1em !important; 
     }
     
     /* Position of text*/
@@ -1009,4 +1012,5 @@ footer a {
     footer a {
         margin: 3%;
     }
+
 }
