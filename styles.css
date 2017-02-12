@@ -19,7 +19,7 @@ article, aside, div, footer, header, h1, h2, h3, h4, h5, h6, p, nav, body, head,
     font-family:"SeaSide"; src:url("SEASRN__.ttf");
 }
 @font-face{
-    font-family:"3Dumb"; src:url("FFF.ttf");
+    font-family:"3Dumb"; src:url("AsimovXWidOuIt.otf");
 }
 @font-face{
     font-family:"ArchitectsDaughter"; src:url("ArchitectsDaughter.ttf")
@@ -329,9 +329,9 @@ li{
 /*Text before horizontal lines */
 .label {
     color: #FFFFFF;
-    font-size: 40px;
+    font-size: 2.5em;
     text-shadow: 2px 2px 5px #E4259A;
-    font-family: '3Dumb', sans-serif, Monospace;
+    font-family: "3Dumb", sans-serif, Monospace;
     text-align: center;
 }
 #cca {
@@ -501,7 +501,7 @@ button.clickable.active, button.clickable:hover {
 .accordion {
     background-color:#D3D3D3;
     color: #444;
-    padding: 18px 20px;
+    padding: 18px 0px;
     width: 100%;
     border: none;
     text-align: left;
@@ -509,6 +509,7 @@ button.clickable.active, button.clickable:hover {
     font-size: 15px;
     transition: 0.4s;
     margin-top:2em;
+    overflow: hidden;
 }
 
 /*Award name*/
@@ -878,7 +879,7 @@ footer a {
         height: 720px;
     }
     .home h1{
-        font-size: 80px;
+        font-size: 65px;
         margin-top: -650px;
         margin-left:31%;
     }
