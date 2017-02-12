@@ -174,7 +174,7 @@ nav a:link {
     float:left;
     position: absolute;
     top:0em;
-    left:40%;
+    left:30%;
 }
 
 /* Hamburger Menu */
@@ -185,7 +185,7 @@ nav a:link {
     display: block;
     position: absolute;
     top:2em;
-    left:4em;
+    left:2em;
     z-index:999;
     cursor: pointer;
 }
@@ -565,16 +565,16 @@ button.accordion.active:after{
     position: fixed;
     z-index: 998;
     height:40px;
-    right:-0.1em;
-    top:28em;
+    float:right;
+    top:22em;
     cursor:pointer;
     color:#FFFFFF;
 }
 .back-to-top p{
     position:fixed;
-    right:.1em;
-    top:30.2em;
+    top:24em;
     color:#000000;
+    float:left;
 }
 
 /* First sentence */
@@ -914,7 +914,6 @@ footer a {
     
     /* Back to top */
     .back-to-top img {
-    position: fixed;
     height:40px;
     right:1.5em;
     top:33em;
