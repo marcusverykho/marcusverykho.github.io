@@ -25,7 +25,6 @@ article, aside, div, footer, header, h1, h2, h3, h4, h5, h6, p, nav, body, head,
     font-family:"ArchitectsDaughter"; src:url("ArchitectsDaughter.ttf")
 }
 
-
 .mainContainer {
     max-width: 1280px;
     margin: 0 auto;
@@ -179,6 +178,7 @@ nav a:link {
 }
 
 /* Hamburger Menu */
+/*img adjustment */
 .menu {
     height:50px;
     float:left;
@@ -204,11 +204,13 @@ header ul {
     padding-top:50px;   
     display: none;
 }
+
 #closebtn{
     position: absolute;
     top:0;
     left:120px;
     font-size: 36px;
+    cursor: pointer;
 }
 ul a{
     text-decoration: none;
@@ -766,7 +768,7 @@ button.accordion.active:after{
 }
 .contentstart h2{
     padding-top:6em;
-    padding-left: 20%;
+    text-align: center;
 }
 .results{
     margin: 1em auto;

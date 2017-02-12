@@ -17,7 +17,7 @@
                     <span onclick="openNav()"><img src="Images/menu.png" alt="menu" class="menu"></span>
                 </figure>
                 <ul id="sidenav">
-                    <li><a href="javascript:void(0)" id="closebtn" onclick="closeNav()">&times;</a></li>
+                    <li><a id="closebtn" onclick="closeNav()">&times;</a></li>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="Achievement.html">Achievement</a></li>
                     <li><a href="Portfolio.html">Portfoilio</a></li>
@@ -65,8 +65,8 @@
             </nav>
             
         </header>
-            <article class="contentstart" id=test>
-               <div class="container">
+            <article class="contentstart" id=test >
+               <div class="container" onclick="closeNav()">
                   <h2>Your form has been submitted</h2>
                   <div class="results">
                      <h3>You entered the following data:</h3>               
