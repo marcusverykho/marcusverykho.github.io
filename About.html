@@ -21,18 +21,32 @@
 <body>
     <div class="mainContainer">
         <header>
+            <!-- Hamburger menu -->
+                <figure>
+                    <span onclick="openNav()"><img src="Images/menu.png" alt="menu" class="menu"></span>
+                </figure>
+                <ul id="sidenav">
+                    <li><a href="javascript:void(0)" id="closebtn" onclick="closeNav()">&times;</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Achievement.html">Achievement</a></li>
+                    <li><a href="Portfolio.html">Portfoilio</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
             <!-- Navigation bar -->
-            <nav>
+            <nav id="nav">
                 <!-- Home -->
                 <figure>
                     <a href=index.html><img src="Images/Nav/Home1.PNG" class="icon" id="Home1" alt="home"></a>
                 </figure>
                 <figure><img src="Images/Nav/Home2.PNG" id="Home2" alt="home"></figure>
+                
                 <!--Portfolio -->
                 <figure>
                     <a href="Portfolio.html"><img src="Images/Nav/Portfolio1.PNG" class="icon" id="Portfolio1" alt="portfolio"></a>
                 </figure>
                 <figure><img src="Images/Nav/Portfolio2.PNG" id="Portfolio2" alt="portfolio"></figure>
+                
                 <!-- Achievement -->
                 <figure>
                     <a href="Achievement.html"><img src="Images/Nav/Achievement1.PNG" class="icon" id="Achievement1" alt="achievement"></a>
@@ -43,9 +57,9 @@
                     <a href="About.html"><img src="Images/Nav/About1.PNG" class="icon" id="About1" alt="about"></a>
                 </figure>
                 <figure><img src="Images/Nav/About2.PNG" id="About2" alt="About"></figure>
-                 <figure>
-                    <a href=About.html><img src="Images/Nav/About1.PNG" class="Active" id="About3" alt="About"></a>
-                </figure>
+                <figure>
+                    <a href="Achievement.html"><img src="Images/Nav/About1.PNG" class="Active" id="About3" alt="About"></a></figure>
+                
                 <!-- Contact -->
                 <figure>
                     <a href="Contact.html"><img src="Images/Nav/Contact1.PNG" class="icon" id="Contact1" alt="contact"></a>
@@ -56,6 +70,7 @@
                     <img src="Images/Nav/logo2.png" alt="logo" id="logo">
                 </figure>
             </nav>
+            
         </header>
         <section id="About">
             <h2 class="notFinished">Work still in progress..</h2>
@@ -67,6 +82,7 @@
             <a href="http://twitter.com"><img src="Images/Footer/twitter.png" alt="twitter"></a>
             <a href="http://hotmail.com"><img src="Images/Footer/envelope.png" alt="email"></a>
         </footer>
+        <script src="script.js"></script>
     </div>
     </body>
 </html>

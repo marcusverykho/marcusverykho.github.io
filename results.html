@@ -1,22 +1,15 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <title>Contact Marcus</title>
-    <!--
-	   WCD CA1
-	   Filename: index.html
-	   Author: P1625749
-	   Date: 27 Nov 2016
-	-->
-    <link rel="shortcut icon" href="Images/Favicon.ico">
+   <head>
+      <link rel="shortcut icon" href="Images/Favicon.ico">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet"> </head>
-
-<body>
-    <div class="mainContainer">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+   </head>
+    
+   <body>
+      <div class="mainContainer">
         <header>
             <!-- Hamburger menu -->
                 <figure>
@@ -71,40 +64,29 @@
             </nav>
             
         </header>
-        <section class="Contact" id="test">
-            <h1>Contact me !</h1>
-             <form class="contact-form" action="results.html">
-                <fieldset id=contactinfo>
-                    <legend>Contact information</legend>
-                    <label>First Name
-                    <input type="text" name="Firstname" id="firstnameinput" placeholder="First name" required>
-                    </label>
-                    <label><br />Last Name
-                    <input type="text" name="Lastname" id="lastnameinput" placeholder="Last name" required>
-                    </label>
-                    <label><br />Email
-                    <input type="email" name="email" id="emailinput" placeholder="address@example.com"required>
-                    </label>
-                </fieldset>
-                <fieldset id="purpose">
-                    <legend>Contact Purpose</legend>
-                    <input type="checkbox" name="purpose" id="improve" value="WebsiteImprovement"> Improvement on my website<br />
-                    <input type="checkbox" name="purpose" id="personalquestion" value="personalquestion"> Ask me a personal question <br />
-                    <input type="checkbox" name="purpose" id="science" value="Personal"> Ask me a work related question<br />
-                    <input type="checkbox" name="purpose" id="feedbacks" value="feedback"> Giving any feedback<br />
-                </fieldset>
-                <fieldset id="additionalinfo">
-                 <legend>Questions/Feedback</legend>
-                     <label for="feedback">
-                        <textarea name="feedback" id="feedback" rows="6" placeholder="Feedbacks/Questions" required></textarea>
-                     </label>
-                 </fieldset>
-                <fieldset id="submitbutton">
-                    <input type="submit" id="submit" value="Submit">
-                </fieldset>
-                </form>
-        </section>
-        <footer>
+            <article class="contentstart" id=test>
+               <div class="container">
+                  <h2>Your form has been submitted</h2>
+                  <div class="results">
+                     <h3>You entered the following data:</h3>               
+                     <script>
+                         var formData = location.search;
+                         formData = formData.substring(1, formData.length);
+                         while (formData.indexOf("+") !== -1) {
+                            formData = formData.replace("+", " ");
+                         }
+                         formData = decodeURIComponent(formData);
+                         var formArray = formData.split("&");
+                         for (var i = 0; i < formArray.length; i = i + 1) {
+                            document.write("<p>" + formArray[i] + "</p>");
+                         }
+                     </script>
+                      <a href="Contact.html" id="back">Go back</a>
+                  </div>
+               </div>
+            </article>
+         </div>
+            <footer>
             <p> &copy; Copyright 2016 Marcus Kho. Content thieves will be beaten.</p>
             <a href="http://facebook.com"><img src="Images/Footer/facebook.png" alt="facebook"></a>
             <a href="http://instagram.com"><img src="Images/Footer/instagram.png" alt="instagram"></a>
@@ -112,6 +94,5 @@
             <a href="http://hotmail.com"><img src="Images/Footer/envelope.png" alt="email"></a>
         </footer>
         <script src="script.js"></script>
-    </div>
-    </body>
+   </body>
 </html>
