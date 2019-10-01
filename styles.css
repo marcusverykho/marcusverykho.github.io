@@ -1,0 +1,178 @@
+/* reset styles */
+a, article, body, div, fieldset, figcaption, figure, footer, form, header, h1, 
+h2, h3, img, input, label, legend, li, nav, p, section, textarea, ul {
+   border: 0;
+   padding: 0;
+   margin: 0;
+}
+
+.mainContainer, body, html {
+    height:100%;
+    margin: 0;
+    padding: 0;
+}
+
+.background {
+    text-align: center;
+    width: 100%;
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.content {
+    max-width: 1280px;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+.white {
+    background-color: white;
+}
+
+.greenText {
+    color:#38A37A;
+}
+/* Standby green 55C3C6 */
+/* Blue #18B0E3 can't decide >< */
+
+.green {
+    background-color:#B0E4A2;
+}
+
+.whiteText {
+    color: white;
+}
+
+/* TOP */
+#Top{
+    background-image: url('Images/photo_2019-09-05_19-07-37.jpg');
+    height: 100%;
+    max-width: 100%;
+}
+
+#Text {
+    text-align:center;
+    font-family: "Courier New", Courier;
+}
+
+#Text h1 {
+    font-size: 70px;
+    color:black;
+    border-bottom: 0.02px solid black;
+    display:inline-block;
+}
+
+#Text h3 {
+    color:black;
+    padding-top:15px;
+    font-size:20px;
+}
+
+#LineOne {
+    color:grey;
+    font-size: 18px !important;
+    padding-top:15% !important;
+}
+
+
+/* End of Top */
+
+/* first section */
+
+#First {
+    height:500px;
+    text-align: center;
+}
+
+.title {
+    text-align: center;
+    font-size: 40px;
+    line-height: 2em;
+    padding-top:1em;
+}
+
+.shortTitle {
+    border-bottom: 0.02px solid black;
+    display:inline-block;
+    padding: 0 200px 10px 200px;
+    color:gray;
+}
+
+.about {
+    text-align: left;
+    margin-left:18% !important;
+}
+
+#AboutTitle {
+    margin-top:40px;
+    margin-bottom: 15px;
+    font-size:18px;
+}
+
+#pict{
+    border: 8px solid #55C3C6;
+    border-radius: 50%;
+    width: 230px;
+    height: 230px;
+    margin-top:-18%;
+}
+
+.details {
+    text-align:right;
+    margin-right:24%;
+}
+
+#DetailsTitle {
+    margin-top:-18%;
+    font-size:18px;
+    margin-bottom: 15px;
+}
+
+/* second section */
+#Second {
+    height:120%;
+}
+
+#Timeline {
+    font-family: "Trebuchet MS", Helvetica;
+}
+
+.timelineTitle {
+    font-size:23px;
+    padding-bottom: 1.5em; 
+    margin-right:50%;
+}
+
+#Education {
+    margin-right: 55% !important;
+    margin-top:2% !important;
+}
+
+.timelineLeftText {
+    text-align:left;
+    margin-left: 21%;
+    font-size: 16px;
+}
+
+.timelineTextTile{
+    margin-bottom: 0.5em;
+    font-size: 18px;
+}
+
+.timelineRightTitle {
+    margin-top:-4.1%;
+}
+
+.timelineRightText {
+    text-align:left;
+    margin-left:50%;
+}
+
+.timelineSpacing {
+    margin-bottom:5em;
+}
+
+#Third {
+    height:100%;
+}
